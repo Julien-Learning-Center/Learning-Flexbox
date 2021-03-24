@@ -6,12 +6,12 @@
 
 article {
     background-color: coral;
-    flex-grow: 1;
+    flex: 4;
 }
 
 aside {
     background-color: yellow;
-    width: 25%;
+    flex: 1;
 }
 
 footer {
@@ -24,7 +24,7 @@ header {
 
 nav {
     background-color: blueviolet;
-    width: 25%;
+    flex: 1;
 }
 
 .flex-container {
@@ -36,4 +36,5 @@ nav {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
+    height: 92.2vh;
 }
