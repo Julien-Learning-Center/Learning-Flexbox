@@ -1,0 +1,18 @@
+header,
+footer {
+    background-color: aqua;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+main {
+    padding-top: 10%;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
