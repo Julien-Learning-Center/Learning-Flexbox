@@ -1,0 +1,39 @@
+/* Imports */
+
+@import "../reset.css";
+
+/* Menu styles */
+
+article {
+    background-color: coral;
+    flex-grow: 1;
+}
+
+aside {
+    background-color: yellow;
+    width: 25%;
+}
+
+footer {
+    background-color: crimson;
+}
+
+header {
+    background-color: aqua;
+}
+
+nav {
+    background-color: blueviolet;
+    width: 25%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-content {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
