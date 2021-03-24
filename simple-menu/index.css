@@ -1,0 +1,82 @@
+/* CSS Reset */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Menu styles */
+
+.menu-section {
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+}
+
+.menu ul {
+    /* I know that it doesn't look great, but I wanted to try some gradients */
+    background: linear-gradient(
+        0deg,
+        rgba(34, 193, 195, 1) 0%,
+        rgba(253, 187, 45, 1) 100%
+    );
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    color: #353b48;
+    display: block;
+    padding: 0.6em 1em;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #808080;
+}
+
+/* Media query for screens that have a minimum width of 600 px */
+@media screen and (min-width: 600px) {
+    .navbar ul {
+        display: flex;
+        justify-content: space-between; /* Align items along the main axis */
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        flex-grow: 1; /* All items will take equal space */
+        flex-basis: auto; /* All items width will depend on their content */
+        flex-shrink: 0; /* All items will not shrink when they have no more space, they will wrap to the next line instead */
+    }
+}
