@@ -1,36 +1,46 @@
-/* Menu styles */
-
-article {
-    background-color: coral;
-    flex: 4;
+* {
+    box-sizing: border-box;
+    border: 1px solid black;
+    flex: 0 0 0%; /* Flex reset */
 }
 
-aside {
-    background-color: yellow;
-    flex: 1;
-}
-
-footer {
-    background-color: crimson;
-}
-
-header {
-    background-color: aqua;
-}
-
-nav {
-    background-color: blueviolet;
-    flex: 1;
+body,
+html {
+    height: 100%; /* Make sure that all the screen height is used */
 }
 
 .flex-container {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
-.flex-content {
+main {
     display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    height: 92.2vh;
+    flex: 1 1 0%;
+}
+
+header,
+footer {
+    align-items: center;
+    flex: 0 0 70px;
+}
+
+aside,
+nav {
+    flex: 0 0 160px;
+}
+
+main > section {
+    flex: 1 1 0%;
+}
+
+/* Makes the content centered */
+header,
+footer,
+nav,
+aside,
+main > section {
+    display: flex;
+    justify-content: center;
 }
